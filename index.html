@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanguard Guild</title>
+<meta name="theme-color" content="#0d0a09">
+<meta name="description" content="Vanguard Guild is a private network for fighters, traders and gamers, with state-based clubs that meet in person.">
+<link rel="icon" href="images/crest.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="images/crest.png" alt=""><span>Vanguard Guild</span></a>
+    <nav aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#tribes">Tribes</a>
+      <a href="#clubhouse">Clubhouse</a>
+      <a href="#how">How it works</a>
+      <a href="#cards">Cards</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </div>
+  <div class="hbar" id="hbar"></div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HOME -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"><img src="images/trading-desk.jpg" alt=""></div>
+    <div class="wrap">
+      <div>
+        <p class="kicker">Private network · Est. 2024</p>
+        <h1>Vanguard<br>Guild</h1>
+        <p class="tagline">Brotherhood, after dark.</p>
+        <p class="lede">A private network for fighters, traders and gamers. State-based clubs that meet in person. No feed, no followers, just people in your state.</p>
+        <div class="statusbox">
+          <div class="meta"><span>[STATUS] Your application</span><span id="pct">0%</span></div>
+          <div class="track" id="bar" role="progressbar" aria-label="Application progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="fill"></div></div>
+          <p class="note" id="next">Not started. Choose your tribe to begin.</p>
+        </div>
+        <div class="cta">
+          <a class="btn gold" href="#apply">[ Apply to join ]</a>
+          <a class="btn ghost" href="#clubhouse">[ See the clubhouse ]</a>
+        </div>
+      </div>
+      <figure class="medal">
+        <img src="images/crest.png" alt="Vanguard Guild crest: a fighter on a shield above a key, with the words Honor, Legacy, Knowledge and the year 2024">
+        <figcaption>Vanguard Guild crest, 2024</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. TRIBES -->
+  <section class="section" id="tribes">
+    <div class="wrap">
+      <p class="kicker">The tribes</p>
+      <h2>Three tribes, one guild</h2>
+      <p class="intro">Different arenas, the same instinct: prepare hard, take risks you can afford, and keep improving.</p>
+      <div class="grid3">
+        <article class="box tribe fighter">
+          <div class="pic"><img src="images/fight-night.jpg" alt="A crowd gathered around two fighters grappling on a mat in a car park at night, under string lights" loading="lazy"></div>
+          <span class="ico">FT</span><h3>Fighters</h3>
+          <p>MMA practitioners and combat-sports athletes. Train, spar and compete with people who take it seriously.</p>
+          <a class="go" href="#apply" data-tribe="fighter">[ Choose fighter ]</a>
+        </article>
+        <article class="box tribe trader">
+          <div class="pic"><img src="images/trading-desk.jpg" alt="Traders at tables in a wood-panelled lounge checking charts on tablets and laptops while a jazz band plays" loading="lazy"></div>
+          <span class="ico">TR</span><h3>Traders</h3>
+          <p>Traders at every level. Compare strategy, review risk and talk markets face to face.</p>
+          <a class="go" href="#apply" data-tribe="trader">[ Choose trader ]</a>
+        </article>
+        <article class="box tribe gamer">
+          <div class="pic"><img src="images/lan-night.jpg" alt="Gamers with headsets at lit gaming stations in the courtyard of a stone clubhouse, with a trading screen and piano behind them" loading="lazy"></div>
+          <span class="ico">GM</span><h3>Gamers</h3>
+          <p>Competitive and esports players. Meet your scrim partners, run LAN nights and watch tournaments together.</p>
+          <a class="go" href="#apply" data-tribe="gamer">[ Choose gamer ]</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MOTTO -->
+  <section class="motto" aria-label="The Guild motto">
+    <div class="wrap">
+      <div class="grid3">
+        <div><h2>Honor</h2><p>Respect for every member and for the code the Guild shares.</p></div>
+        <div><h2>Legacy</h2><p>Clubs built to last, with members who bring the next ones in.</p></div>
+        <div><h2>Knowledge</h2><p>Skills, strategy and lessons passed on across every tribe.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CLUBHOUSE GALLERY -->
+  <section class="section" id="clubhouse">
+    <div class="wrap">
+      <p class="kicker">The clubhouse</p>
+      <h2>Inside the clubhouse</h2>
+      <p class="intro">Every state club is built around a warm room to land in after the session: mats and sparring, cars in the lot, charts and a jazz trio, and a fire to end the night. Tap any picture to enlarge it.</p>
+      <div class="gallery">
+        <figure class="g g0"><button type="button" class="shot" data-title="The clubhouse" data-line="Piano, mats and market screens under one roof."><img src="images/clubhouse.jpg" alt="A sunlit stone clubhouse with a grand piano and leather sofas, jiu-jitsu training on mats in the courtyard, and men talking over a trading screen" loading="lazy"></button><figcaption><b>The clubhouse</b><span>Piano, mats and market screens under one roof.</span></figcaption></figure>
+        <figure class="g g1"><button type="button" class="shot" data-title="Fight night" data-line="Open mats and sparring under a bare bulb."><img src="images/fight-night.jpg" alt="A crowd gathered around two fighters grappling on a mat in a car park at night, under string lights" loading="lazy"></button><figcaption><b>Fight night</b><span>Open mats and sparring under a bare bulb.</span></figcaption></figure>
+        <figure class="g g2"><button type="button" class="shot" data-title="Garage meet" data-line="Cars, coffee and conversation after dark."><img src="images/garage-meet.jpg" alt="Classic Porsches parked in a row at a night car meet beneath a highway interchange" loading="lazy"></button><figcaption><b>Garage meet</b><span>Cars, coffee and conversation after dark.</span></figcaption></figure>
+        <figure class="g g3"><button type="button" class="shot" data-title="The desk" data-line="Charts, risk reviews and strategy talk."><img src="images/trading-desk.jpg" alt="Traders at tables in a wood-panelled lounge checking charts on tablets and laptops while a jazz band plays" loading="lazy"></button><figcaption><b>The desk</b><span>Charts, risk reviews and strategy talk.</span></figcaption></figure>
+        <figure class="g g4"><button type="button" class="shot" data-title="LAN night" data-line="Scrims, tournaments and loud headsets."><img src="images/lan-night.jpg" alt="Gamers with headsets at lit gaming stations in the courtyard of a stone clubhouse, with a trading screen and piano behind them" loading="lazy"></button><figcaption><b>LAN night</b><span>Scrims, tournaments and loud headsets.</span></figcaption></figure>
+        <figure class="g g5"><button type="button" class="shot" data-title="The lounge" data-line="Where every state club ends the night."><img src="images/the-lounge.jpg" alt="Men sitting around a table playing acoustic guitars under string lights in a car park at night" loading="lazy"></button><figcaption><b>The lounge</b><span>Where every state club ends the night.</span></figcaption></figure>
+      </div>
+      <p class="note">Pictures are illustrative and do not show real Guild events.</p>
+    </div>
+  </section>
+
+  <!-- 5. HOW IT WORKS -->
+  <section class="section alt" id="how">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2>Three steps in</h2>
+      <div class="grid3">
+        <div class="box step"><b>01</b><h3>Choose your tribe</h3><p>Pick fighter, trader or gamer. This sets which club you apply to.</p></div>
+        <div class="box step"><b>02</b><h3>Pick your state</h3><p>Each club is based in one state, so the people you meet are people you can actually see.</p></div>
+        <div class="box step"><b>03</b><h3>Meet your club</h3><p>Accept the Guild code and send your application. Approved members get an invite to their state's meetups.</p></div>
+      </div>
+      <div class="box app">
+        <h3>The app</h3>
+        <p class="note">Vanguard Guild runs as a mobile app for members. This website is where you apply and see how the clubs work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5b. GUILD CARDS -->
+  <section class="section cards" id="cards">
+    <div class="wrap">
+      <p class="kicker">The cards</p>
+      <h2>Your card shows your rank</h2>
+      <p class="intro">Every member gets a Guild Card with a photo, stamps, stats and a LinkedIn link. Turn up, earn stamps and level up. A beginner holds a clean, plain card. The higher the tier, the more colour, metal and foil it carries.</p>
+      <div class="idrail">
+        <figure class="idf">
+          <div class="idcard tier-d" aria-hidden="true"><div class="idin">
+            <div class="idl"><svg class="sil " viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="36" r="17"/><path d="M14 100 Q14 66 50 62 Q86 66 86 100 Z"/></svg><b>Mohammed<br>Basim</b></div>
+            <div class="idr">
+              <p class="idt"><span>Initiate · Rank D</span><svg class="emb mini" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eDg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b6b70"/><stop offset=".5" stop-color="#4a4a4f"/><stop offset="1" stop-color="#333338"/></linearGradient><linearGradient id="eDm1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a8a90"/><stop offset=".55" stop-color="#6b6b70"/><stop offset="1" stop-color="#4a4a4f"/></linearGradient></defs><circle cx="60" cy="60" r="40" fill="none" stroke="#6f6f75" stroke-width="2"/><path d="M60 28 L86 44 L86 70 Q86 86 60 98 Q34 86 34 70 L34 44 Z" fill="none" stroke="#6f6f75" stroke-width="2"/><path d="M46 52 L60 82 L74 52 L66 52 L60 66 L54 52 Z" fill="none" stroke="#6f6f75" stroke-width="2"/></svg></p>
+              <div class="idsep"></div>
+              <div class="idst"><small>Stamps</small><div class="stamps"><span class="st on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg></span><span class="st gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 19L18 6M14 6h4v4M19 19L6 6M10 6H6v4"/></svg></span><span class="st add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></div></div>
+              <div class="idsep"></div>
+              <div class="idrows"><dl><div><dt>MMA record</dt><dd class="">0-0-0</dd></div><div><dt>BJJ rank</dt><dd class="">White I</dd></div><div><dt>Game rank</dt><dd class="">Unranked</dd></div><div><dt>P&amp;L (YTD)</dt><dd class="">0.0%</dd></div></dl></div>
+              <span class="idbtn">Connect on LinkedIn</span>
+            </div>
+          </div></div>
+          <figcaption><b>D-Tier · Initiate</b><span>Day one. A plain card with a blank photo, three stamp slots and a LinkedIn button.</span></figcaption>
+        </figure>
+        <figure class="idf">
+          <div class="idcard tier-a" aria-hidden="true"><div class="idin">
+            <div class="idl"><svg class="sil " viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="36" r="17"/><path d="M14 100 Q14 66 50 62 Q86 66 86 100 Z"/></svg><b>Mohammed<br>Basim</b></div>
+            <div class="idr">
+              <p class="idt"><span>Elite Captain · Rank A</span><svg class="emb mini" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eAg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1b8"/><stop offset=".5" stop-color="#d6a53a"/><stop offset="1" stop-color="#7a5210"/></linearGradient><linearGradient id="eAm2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6d0"/><stop offset=".55" stop-color="#ecc86e"/><stop offset="1" stop-color="#a77a1f"/></linearGradient></defs><polygon points="60.0,4.0 72.4,13.6 88.0,11.5 93.9,26.1 108.5,32.0 106.4,47.6 116.0,60.0 106.4,72.4 108.5,88.0 93.9,93.9 88.0,108.5 72.4,106.4 60.0,116.0 47.6,106.4 32.0,108.5 26.1,93.9 11.5,88.0 13.6,72.4 4.0,60.0 13.6,47.6 11.5,32.0 26.1,26.1 32.0,11.5 47.6,13.6" fill="url(#eAg2)" stroke="#7a5210" stroke-width="1"/><circle cx="60" cy="60" r="41" fill="url(#eAg2)" stroke="#7a5210" stroke-width="2"/><circle cx="60" cy="60" r="35" fill="#16110d" stroke="#ecc86e" stroke-width="1.5"/><circle cx="60" cy="60" r="31" fill="none" stroke="#ecc86e" stroke-width=".8" stroke-dasharray="2 3"/><path d="M60 30 L84 45 L84 69 Q84 84 60 95 Q36 84 36 69 L36 45 Z" fill="url(#eAg2)" stroke="#7a5210" stroke-width="1.5"/><path d="M47 53 L60 80 L73 53 L66 53 L60 66 L54 53 Z" fill="url(#eAm2)" stroke="#7a5210" stroke-width=".8"/></svg></p>
+              <div class="idsep"></div>
+              <div class="idst"><small>Stamps</small><div class="stamps"><span class="st chk g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9"/></svg></span><span class="st chk v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9"/></svg></span><span class="st chk s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9"/></svg></span><span class="st chk g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9"/></svg></span><span class="st chk v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9"/></svg></span></div></div>
+              <div class="idsep"></div>
+              <div class="idrows"><dl><div><dt>MMA record</dt><dd class="">9-1-0</dd></div><div><dt>BJJ rank</dt><dd class="">Purple II</dd></div><div><dt>Game rank</dt><dd class="">Diamond II</dd></div><div><dt>P&amp;L (YTD)</dt><dd class="up">+18.7%</dd></div></dl><span class="chips"><u class="a"></u><u class="b"></u><u></u><u class="b"></u><u></u><u></u><u class="c"></u><u class="a"></u><u class="c"></u></span></div>
+              <span class="idbtn">Connect on LinkedIn</span>
+            </div>
+          </div></div>
+          <figcaption><b>A-Tier · Elite Captain</b><span>The same member, a year on. Five stamps, real stats and a foil frame.</span></figcaption>
+        </figure>
+      </div>
+      <div class="ladder">
+        <p class="ladhead"><span>Rank up</span><i></i></p>
+        <ol class="rungs">
+          <li class="rung r-d"><svg class="emb" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eDg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b6b70"/><stop offset=".5" stop-color="#4a4a4f"/><stop offset="1" stop-color="#333338"/></linearGradient><linearGradient id="eDm3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a8a90"/><stop offset=".55" stop-color="#6b6b70"/><stop offset="1" stop-color="#4a4a4f"/></linearGradient></defs><circle cx="60" cy="60" r="40" fill="none" stroke="#6f6f75" stroke-width="2"/><path d="M60 28 L86 44 L86 70 Q86 86 60 98 Q34 86 34 70 L34 44 Z" fill="none" stroke="#6f6f75" stroke-width="2"/><path d="M46 52 L60 82 L74 52 L66 52 L60 66 L54 52 Z" fill="none" stroke="#6f6f75" stroke-width="2"/></svg><b>D-Tier</b><i>Initiates</i><span>New or rarely at events. Clean and plain.</span></li>
+          <li class="rung r-c"><svg class="emb" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eCg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f9fb"/><stop offset=".5" stop-color="#aab2bc"/><stop offset="1" stop-color="#5a626d"/></linearGradient><linearGradient id="eCm4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#cfd5dc"/><stop offset="1" stop-color="#8a929d"/></linearGradient></defs><circle cx="60" cy="60" r="41" fill="url(#eCg4)" stroke="#5a626d" stroke-width="2"/><circle cx="60" cy="60" r="35" fill="#16110d" stroke="#cfd5dc" stroke-width="1.5"/><path d="M60 30 L84 45 L84 69 Q84 84 60 95 Q36 84 36 69 L36 45 Z" fill="url(#eCg4)" stroke="#5a626d" stroke-width="1.5"/><path d="M47 53 L60 80 L73 53 L66 53 L60 66 L54 53 Z" fill="url(#eCm4)" stroke="#5a626d" stroke-width=".8"/></svg><b>C-Tier</b><i>Guild Regulars</i><span>Turns up often. Full colour, simple frame.</span></li>
+          <li class="rung r-b"><svg class="emb" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eBg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3cfae"/><stop offset=".5" stop-color="#bb7d46"/><stop offset="1" stop-color="#693d1b"/></linearGradient><linearGradient id="eBm5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9d4"/><stop offset=".55" stop-color="#d9a173"/><stop offset="1" stop-color="#8a5a30"/></linearGradient></defs><circle cx="60" cy="60" r="41" fill="url(#eBg5)" stroke="#693d1b" stroke-width="2"/><circle cx="60" cy="60" r="35" fill="#16110d" stroke="#cf9660" stroke-width="1.5"/><circle cx="60" cy="60" r="31" fill="none" stroke="#cf9660" stroke-width=".8" stroke-dasharray="2 3"/><path d="M60 30 L84 45 L84 69 Q84 84 60 95 Q36 84 36 69 L36 45 Z" fill="url(#eBg5)" stroke="#693d1b" stroke-width="1.5"/><path d="M47 53 L60 80 L73 53 L66 53 L60 66 L54 53 Z" fill="url(#eBm5)" stroke="#693d1b" stroke-width=".8"/></svg><b>B-Tier</b><i>Operators &amp; Strategists</i><span>Steady at events and contributing. Metal finish.</span></li>
+          <li class="rung r-a"><svg class="emb" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eAg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1b8"/><stop offset=".5" stop-color="#d6a53a"/><stop offset="1" stop-color="#7a5210"/></linearGradient><linearGradient id="eAm6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6d0"/><stop offset=".55" stop-color="#ecc86e"/><stop offset="1" stop-color="#a77a1f"/></linearGradient></defs><polygon points="60.0,4.0 72.4,13.6 88.0,11.5 93.9,26.1 108.5,32.0 106.4,47.6 116.0,60.0 106.4,72.4 108.5,88.0 93.9,93.9 88.0,108.5 72.4,106.4 60.0,116.0 47.6,106.4 32.0,108.5 26.1,93.9 11.5,88.0 13.6,72.4 4.0,60.0 13.6,47.6 11.5,32.0 26.1,26.1 32.0,11.5 47.6,13.6" fill="url(#eAg6)" stroke="#7a5210" stroke-width="1"/><circle cx="60" cy="60" r="41" fill="url(#eAg6)" stroke="#7a5210" stroke-width="2"/><circle cx="60" cy="60" r="35" fill="#16110d" stroke="#ecc86e" stroke-width="1.5"/><circle cx="60" cy="60" r="31" fill="none" stroke="#ecc86e" stroke-width=".8" stroke-dasharray="2 3"/><path d="M60 30 L84 45 L84 69 Q84 84 60 95 Q36 84 36 69 L36 45 Z" fill="url(#eAg6)" stroke="#7a5210" stroke-width="1.5"/><path d="M47 53 L60 80 L73 53 L66 53 L60 66 L54 53 Z" fill="url(#eAm6)" stroke="#7a5210" stroke-width=".8"/></svg><b>A-Tier</b><i>Elite Captains &amp; Heavyweights</i><span>Leads, mentors and shows up. Gold and foil.</span></li>
+          <li class="rung r-s"><svg class="emb" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><linearGradient id="eSg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3c0"/><stop offset=".5" stop-color="#e3ac3c"/><stop offset="1" stop-color="#7e5110"/></linearGradient><linearGradient id="eSm7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a86"/><stop offset=".55" stop-color="#c4182c"/><stop offset="1" stop-color="#6b0716"/></linearGradient><linearGradient id="eSh7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5aa8"/><stop offset=".3" stop-color="#5ad2ff"/><stop offset=".6" stop-color="#ffe85a"/><stop offset="1" stop-color="#ff5aa8"/></linearGradient></defs><circle cx="60" cy="60" r="58" fill="url(#eSh7)" opacity=".4"/><polygon points="60.0,2.0 69.2,13.9 82.2,6.4 86.1,20.9 101.0,19.0 99.1,33.9 113.6,37.8 106.1,50.8 118.0,60.0 106.1,69.2 113.6,82.2 99.1,86.1 101.0,101.0 86.1,99.1 82.2,113.6 69.2,106.1 60.0,118.0 50.8,106.1 37.8,113.6 33.9,99.1 19.0,101.0 20.9,86.1 6.4,82.2 13.9,69.2 2.0,60.0 13.9,50.8 6.4,37.8 20.9,33.9 19.0,19.0 33.9,20.9 37.8,6.4 50.8,13.9" fill="url(#eSg7)" stroke="#7e5110" stroke-width="1"/><circle cx="60" cy="60" r="41" fill="url(#eSg7)" stroke="#7e5110" stroke-width="2"/><circle cx="60" cy="60" r="35" fill="#16110d" stroke="#ffe08a" stroke-width="1.5"/><circle cx="60" cy="60" r="31" fill="none" stroke="#ffe08a" stroke-width=".8" stroke-dasharray="2 3"/><path d="M60 30 L84 45 L84 69 Q84 84 60 95 Q36 84 36 69 L36 45 Z" fill="url(#eSg7)" stroke="#7e5110" stroke-width="1.5"/><path d="M47 53 L60 80 L73 53 L66 53 L60 66 L54 53 Z" fill="url(#eSm7)" stroke="#7e5110" stroke-width=".8"/></svg><b>S-Tier</b><i>God-Tier / Unmatched</i><span>Exceptionally rare. Panel-approved. Full holo.</span></li>
+        </ol>
+      </div>
+      <p class="note">Sample cards, shown as a concept for the app. Names, stats and numbers are examples. Stats are self-reported: the Guild does not check trading results and does not give financial advice.</p>
+      <div class="grid3 cardfacts">
+        <div class="box"><h3>Stamps</h3><p>Earned in person. Go to an event, run a session, mentor someone or win a bracket and an organiser scans you in. Stamps fill the card and level it up.</p></div>
+        <div class="box"><h3>Links</h3><p>Connections that are real. A link forms only when two members both confirm they met at an event. Add your LinkedIn if you want it on the card. It is optional and never public by default.</p></div>
+        <div class="box"><h3>Rare cards</h3><p>Foil and numbered versions go to flagship events and top contributors. Rank is earned by showing up, never bought, and nobody opens random packs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. APPLY -->
+  <section class="section" id="apply">
+    <div class="wrap">
+      <p class="kicker">Apply</p>
+      <h2>Apply to the Guild</h2>
+      <p class="intro">Four short steps. Your progress shows in the bar at the top of the page.</p>
+      <div class="apply">
+
+        <aside class="stack sticky" aria-label="Your club preview">
+          <div class="box bar clubbar"><span id="club-title">YOUR CLUB</span><i class="sq" id="sq"></i></div>
+          <section class="box">
+            <div class="meta"><span>Club status</span><span>Invite only</span></div>
+            <p class="note" id="club-empty">Choose a tribe and a state and your club appears here.</p>
+            <div id="club" hidden>
+              <h3 class="clubtitle" id="club-name"></h3>
+              <p class="note" id="club-text"></p>
+            </div>
+          </section>
+          <dl class="stack" id="club-facts"></dl>
+        </aside>
+
+        <form id="apply-form" class="stack" novalidate>
+          <fieldset class="box stack">
+            <legend><b>1</b> Choose your tribe</legend>
+            <label class="item fighter"><input type="radio" name="tribe" value="fighter"><span class="ico">FT</span><span><b>Fighters</b><span class="sub">MMA practitioners and combat-sports athletes.</span></span><span class="tag">[ SELECTED ]</span></label>
+            <label class="item trader"><input type="radio" name="tribe" value="trader"><span class="ico">TR</span><span><b>Traders</b><span class="sub">Strategy, risk and markets.</span></span><span class="tag">[ SELECTED ]</span></label>
+            <label class="item gamer"><input type="radio" name="tribe" value="gamer"><span class="ico">GM</span><span><b>Gamers</b><span class="sub">Esports and competitive play.</span></span><span class="tag">[ SELECTED ]</span></label>
+          </fieldset>
+
+          <fieldset class="box stack">
+            <legend><b>2</b> Pick your state</legend>
+            <label class="sr" for="state">Your state</label>
+            <select class="pick" id="state" name="state"></select>
+          </fieldset>
+
+          <fieldset class="box stack">
+            <legend><b>3</b> Accept the Guild code</legend>
+            <ol class="rules">
+              <li>Respect every member, in the club and online.</li>
+              <li>What happens in the club stays in the club.</li>
+              <li>Show up, put in the effort, help others improve.</li>
+            </ol>
+            <label class="item checkbox" id="acceptItem">
+              <input type="checkbox" id="accept" name="accept"><span class="ico"></span>
+              <span><b>I accept the Guild code</b><span class="sub">Respect, discretion, effort</span></span>
+            </label>
+            <div class="row"><label for="handle">Your handle</label><input id="handle" name="handle" placeholder="@username (optional)" autocomplete="off" maxlength="21"></div>
+          </fieldset>
+
+          <fieldset class="box stack">
+            <legend><b>4</b> Your details</legend>
+            <div class="row"><label for="name">Name</label><input id="name" name="name" autocomplete="name" placeholder="Your name"></div>
+            <div class="row"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="row"><label for="why">Why join</label><input id="why" name="why" placeholder="In a sentence or two" autocomplete="off"></div>
+          </fieldset>
+
+          <p class="msg" id="msg" role="status"></p>
+          <div class="pair">
+            <button class="btn solid" type="submit">[ Submit form ]</button>
+            <button class="btn" type="button" id="clear-btn">[ Reset ]</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><img src="images/crest.png" alt=""><div><b>Vanguard Guild</b><span>Honor, Legacy, Knowledge</span></div></div>
+      <ul class="foot-links">
+        <li><a href="#tribes">Tribes</a></li>
+        <li><a href="#clubhouse">Clubhouse</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#apply">Apply</a></li>
+      </ul>
+      <a class="btn ghost sm" href="#top">Back to top ↑</a>
+    </div>
+    <p class="fine">A university web development project. The application form is a demo and sends nothing. Pictures are illustrative, not real Guild events.</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" aria-label="Enlarged picture">
+  <button type="button" class="close" id="lb-close" aria-label="Close picture">[ Close ]</button>
+  <img id="lb-img" alt="">
+  <p id="lb-cap"></p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
